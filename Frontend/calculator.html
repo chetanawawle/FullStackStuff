@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Mini Calculator </title>
+
+
+</head>
+<style>
+.formstyle
+{  
+width: 400px;  
+height: 450px;  
+margin: 20px auto;  
+border: 5px dashed black;  
+border-radius: 5px;  
+padding: 20px;  
+text-align: center;  
+background-color: rgb(174, 228, 87);  
+}  
+
+.main{
+    font-size:medium ;
+    color: black;
+    font-size: 30px;
+  
+}
+.btn{
+    height: 20px;
+    width: 40px;
+    color: aliceblue;
+    background-color: black;
+}
+</style>
+<body>
+    <div class= "formstyle">
+	<h1>Calculator</h2>
+	<script src="script.js"></script>
+<form>
+    <div class="main">
+Value 1: <input type="text" id="x1" /><br><br>
+Value 2: <input type="text" id="x2" /><br><br>
+
+<input type="button" class="btn" onClick="additionBy()" Value="+" />
+<input type="button" class="btn" onClick="substractionBy()" Value="-" />
+<input type="button" class="btn" onClick="multiplyBy()" Value="*" />
+<input type="button" class="btn" onClick="divideBy()" Value="/" />
+
+
+
+</form>
+<p>Result: <br>
+<span id = "result" ></span>
+</p>
+</div>
+</div>
+</body>
+</html>
